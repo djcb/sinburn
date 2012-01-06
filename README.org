@@ -1,0 +1,21 @@
+* Sinburn
+
+  Sinburn (=sinburn-theme.el=) is my own version of the [[http://slinky.imukuppi.org/zenburnpage/][Zenburn]] theme for emacs.
+
+  There are quite a few different /zenburn-for-emacs/ versions floating around
+  the internet – some of my own, see [[http://emacs-fu.blogspot.com/2010/04/zenburn-color-theme.html][zenburn-for-emacs with the color-theme
+  package]], and [[http://emacs-fu.blogspot.com/2010/05/using-zenburn-for-org-mode-generated.html][zenburn-for-emacs-24]].
+  
+  To (hopefully) reduce confusion, I've renamed my version /Sinburn/, and this
+  is where I will do my further customizations.
+
+* Installation
+
+  Note, =sinburn-theme.el= is for Emacs 24 – which is not released /officially/
+  yet, but widely used.
+
+  Drop =sinburn-theme.el= somewhere in your custom theme directory (see the
+  variable =custom-theme-directory=), and execute =M-x load-theme RET sinburn
+  RET=.
+
+
