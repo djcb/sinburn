@@ -132,6 +132,8 @@
     `(secondary-selection ((t (:foreground nil :background ,sinburn-bg+2))))
     `(tool-bar ((t (:background ,sinburn-bg+2))))
 
+
+
     ;; apt-utils
     '(apt-utils-normal-package ((t (:inherit sinburn-primary-1))))
     '(apt-utils-virtual-package ((t (:inherit sinburn-primary-2))))
@@ -216,6 +218,7 @@
     ;; erc
     '(erc-action-face ((t (:inherit erc-default))))
     '(erc-bold-face ((t (:weight bold))))
+    '(erc-button ((t (:inherit sinburn-green+3 :bold t))))
     '(erc-command-indicator-face ((t (:inherit sinburn-green))))
     '(erc-current-nick-face ((t (:inherit sinburn-primary-1))))
     '(erc-dangerous-host-face ((t (:inherit font-lock-warning))))
