@@ -107,14 +107,13 @@
     '(underline ((t (:underline t))))
 
     '(fringe ((t (:inherit 'default))))
-    '(header-line ((t (:inherit 'sinburn-highlight-damp
-			:box (:color "#2e3330" :line-width 2)))))
+    `(header-line ((t (:inherit 'sinburn-highlight-damp
+			:box (:color "#2e3330" :line-width 2) :foreground ,sinburn-yellow-2))))
     '(highlight ((t (:weight bold :underline t))))
     '(hover-highlight ((t (:underline t :foreground "#f8f893"))))
     '(match ((t (:weight bold))))
     `(menu ((t (:background "#1e2320"))))
-    `(mode-line-inactive ((t (:background ,sinburn-green-4 :foreground "#88b090"
-			       :box (:color "#2e3330" :line-width 2)))))
+    
     '(mouse ((t (:inherit sinburn-foreground))))
     '(paren ((t (:inherit sinburn-lowlight-1))))
     '(trailing-whitespace ((t (:inherit font-lock-warning))))
@@ -126,8 +125,12 @@
     `(escape-glyph-face ((t (:foreground ,sinburn-red))))
     `(minibuffer-prompt ((t (:foreground ,sinburn-yellow))))
     `(mode-line ((t (:foreground ,sinburn-yellow :background "#1e2320"
-		      :box (:color "#1e2320" :line-width 2)))))
-    `(region ((t (:foreground nil :background ,sinburn-bg+2))))
+		      :box (:color "#1e2320" :line-width 2) :height 80))))
+    `(mode-line-inactive ((t (:background ,sinburn-green-4
+			       :foreground "#88b090"
+			       :box (:color "#2e3330" :line-width 2)
+			       :height 80))))
+        `(region ((t (:foreground nil :background ,sinburn-bg+2))))
     `(scroll-bar ((t (:background ,sinburn-bg+2))))
     `(secondary-selection ((t (:foreground nil :background ,sinburn-bg+2))))
     `(tool-bar ((t (:background ,sinburn-bg+2))))
@@ -233,7 +236,7 @@
     '(erc-notice-face ((t (:inherit sinburn-green))))
     '(erc-pal-face ((t (:inherit sinburn-primary-3))))
     '(erc-prompt-face ((t (:inherit sinburn-primary-2))))
-    '(erc-timestamp-face ((t (:inherit sinburn-green+2))))
+    '(erc-timestamp-face ((t (:inherit sinburn-yellow :height 75))))
     '(erc-underline-face ((t (:inherit underline))))
     `(erc-default-face ((t (:foreground ,sinburn-fg))))
     `(erc-input-face ((t (:foreground ,sinburn-yellow))))
@@ -424,6 +427,11 @@
     '(keywiz-wrong-face ((t (:inherit font-lock-warning))))
     '(keywiz-command-face ((t (:inherit sinburn-primary-2))))
 
+    ;; linum
+    `(linum ((t (:foreground ,sinburn-yellow :background ,sinburn-bg-1
+		  :height 70))))
+
+    
     ;; magit
     '(magit-section-title ((t (:inherit 'sinburn-red))))
     '(magit-item-highlight ((t (:inherit 'sinburn-blue))))
@@ -546,6 +554,9 @@
     ;; strokes
     '(strokes-char-face ((t (:inherit font-lock-keyword))))
 
+    ;; ;; sunrise-commander
+    ;; '(sr-active-path-face ((t (:inherit sinburn-primary-1))))
+        
     ;; todoo
     '(todoo-item-header-face ((t (:inherit sinburn-primary-1))))
     '(todoo-item-assigned-header-face ((t (:inherit sinburn-primary-2))))
